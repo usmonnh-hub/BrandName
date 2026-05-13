@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252B42;
+}
+
+body {
+  background-color: #252B42;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header div button:first-child {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+header div button:last-child {
+  background-color: #23A6F0;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+}
+header .icons {
+  display: none;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.section1 aside:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section1 aside:first-child h1 {
+  font-size: 70px;
+}
+.section1 aside:first-child p {
+  font-size: 20px;
+}
+.section1 aside:first-child div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section1 aside:first-child div button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: white;
+}
+.section1 aside:first-child div button:first-child {
+  background-color: #23A6F0;
+}
+.section1 aside:first-child div button:last-child {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.section1 aside:first-child img {
+  top: 100px;
+  left: 0px;
+  position: absolute;
+}
+.section1 aside:last-child {
+  position: relative;
+}
+.section1 aside:last-child img:last-child {
+  left: 0;
+  z-index: -1;
+  top: 30px;
+  position: absolute;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header nav, header div {
+    display: none;
+  }
+  .icons {
+    display: flex !important;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  .section1 aside:last-child img {
+    width: 100%;
+  }
+  .menu_mobile {
+    display: block;
+  }
+  .menu_mobile nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu_mobile a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=style.css.map */
