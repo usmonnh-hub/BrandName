@@ -116,6 +116,7 @@ header{
   margin-bottom: 40px;
 }
 .section2{
+    margin-bottom: 100px;
   .sec2-container{
     max-width: 1200px;
     margin: auto;
@@ -130,6 +131,21 @@ header{
     }
   }
 }
+.section3{
+        .sec3-container{
+            max-width: 1200px;
+            margin: auto;
+            .sec3-content{
+                background-color: rgb(255, 255, 255);
+                width: 70%;
+                margin: auto;
+                text-align: center;
+                color: #000;
+                padding-bottom: 30px;
+                border-radius: 10px;
+            }
+        }
+}
 
 
 
@@ -137,6 +153,17 @@ header{
 
 
 @media (max-width: 900px){
+    .section3{
+        .sec3-container{
+            .sec3-content{
+                width: 90%;
+                p{
+                    width: 250px;
+                    margin: auto;
+                }
+            }
+        }
+    }
     .section2{
         .sec2-container{
             .sec2-cnt{
