@@ -131,6 +131,7 @@ header .icons {
   gap: 25px;
   align-items: center;
   margin-bottom: 40px;
+  border-radius: 5px;
 }
 
 .section3 {
@@ -151,7 +152,7 @@ header .icons {
 }
 
 .section4 {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .section4 .section4-container {
   max-width: 1200px;
@@ -172,7 +173,92 @@ header .icons {
   align-items: center;
 }
 
+.section5 {
+  margin-bottom: 100px;
+}
+.section5 .sec5-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.section5 .sec5-container .sec5-content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.section5 .sec5-container .sec5-content .sec5-block1 {
+  background-color: rgb(255, 255, 255);
+  width: 48%;
+  display: flex;
+  color: #000;
+  padding: 30px;
+  gap: 70px;
+  border-radius: 10px;
+}
+.section5 .sec5-container .sec5-content .sec5-block1 .sec5-text {
+  margin-left: 25px;
+}
+.section5 .sec5-container .sec5-content .sec5-block1 .sec5-text .free {
+  color: #23A6F0;
+  margin-bottom: 10px;
+}
+.section5 .sec5-container .sec5-content .sec5-block1 .sec5-btn {
+  color: #23A6F0;
+}
+.section5 .sec5-container .sec5-content .sec5-block1 .sec5-btn .sec5-button {
+  background-color: #23A6F0;
+  padding: 15px 60px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
 @media (max-width: 900px) {
+  .section5 .sec5-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .section5 .sec5-container .sec5-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .section5 .sec5-container .sec5-content .sec5-block1 {
+    background-color: rgb(255, 255, 255);
+    width: 48%;
+    display: flex;
+    color: #000;
+    padding: 30px;
+    gap: 70px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .section5 .sec5-container .sec5-content .sec5-block1 .sec5-text {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .section5 .sec5-container .sec5-content .sec5-block1 .sec5-text .free {
+    color: #23A6F0;
+    margin-bottom: 10px;
+  }
+  .section5 .sec5-container .sec5-content .sec5-block1 .sec5-btn {
+    color: #23A6F0;
+    margin-top: -30px;
+  }
+  .section5 .sec5-container .sec5-content .sec5-block1 .sec5-btn .sec5-button {
+    background-color: #23A6F0;
+    padding: 20px 60px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 5px;
+  }
   .section4 .section4-container {
     max-width: 1200px;
     margin: auto;
