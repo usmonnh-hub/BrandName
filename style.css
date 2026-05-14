@@ -152,6 +152,7 @@ header .icons {
 }
 
 .section4 {
+  margin-bottom: 100px;
   margin-bottom: 150px;
 }
 .section4 .section4-container {
@@ -214,7 +215,114 @@ header .icons {
   border-radius: 5px;
 }
 
+.section6 .sec6-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 570px;
+  align-items: center;
+  font-size: 20px;
+}
+.section6 .sec6-container .d {
+  width: 50%;
+}
+
+.sec6-img {
+  background-color: #FAFAFA;
+  height: 350px;
+}
+.sec6-img .ssa {
+  background-color: red;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+.sec6-img .ssa .sec6-cntainer {
+  position: absolute;
+  width: 1000px;
+  height: 650px;
+  top: -450px;
+  left: 150px;
+  display: flex;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  color: #000;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 {
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 label {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 input {
+  padding: 10px;
+  width: 85%;
+  height: 55px;
+  border-radius: 7px;
+  background-color: #F9F9F9;
+  border: 2px solid #E6E6E6;
+  margin-top: 10px;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 ::-moz-placeholder {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 ::placeholder {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 select {
+  padding: 10px;
+  width: 85%;
+  height: 55px;
+  border-radius: 7px;
+  background-color: #F9F9F9;
+  border: 2px solid #E6E6E6;
+  margin-top: 10px;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-cnt-text .inp1 select .e {
+  font-weight: 400;
+  background-color: #E6E6E6;
+  border: 2px solid #E6E6E6;
+}
+.sec6-img .ssa .sec6-cntainer .sec6-btn {
+  background-color: #23A6F0;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 82%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #252B42;
+}
+.footer .footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 @media (max-width: 900px) {
+  .footer .footer-container {
+    flex-direction: column;
+    margin-top: -400px;
+    text-align: center;
+  }
+  .sec6-img {
+    display: none;
+  }
   .section5 .sec5-container {
     max-width: 1200px;
     margin: auto;
