@@ -58,6 +58,7 @@ header{
 
 .section1{
     @include container();
+   margin-bottom: 120px; 
     aside:first-child{
         display: flex;
         flex-direction: column;
@@ -104,7 +105,50 @@ header{
     display: none;
 }
 
+@mixin sec2_block1{
+  border: 2px solid rgb(255, 255, 255);
+  width: 30%;
+  color: #ffffff;
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section2{
+  .sec2-container{
+    max-width: 1200px;
+    margin: auto;
+    .sec2-cnt{
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .sec2-block1{
+        @include sec2_block1();
+      }
+    }
+  }
+}
+
+
+
+
+
+
 @media (max-width: 900px){
+    .section2{
+        .sec2-container{
+            .sec2-cnt{
+                flex-direction: column;
+                .sec2-block1{
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
     header{
         nav, div{
             display: none;
